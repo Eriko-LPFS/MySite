@@ -58,7 +58,7 @@ header {
     padding: 10px;
     text-align: center;
     height: 200px;
-    background-image: url(Perigo.jpg);
+    background-image: url(./Perigo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: black;
