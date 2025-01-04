@@ -1,0 +1,393 @@
+/* Personalizando a barra de rolagem no Webkit (navegadores como Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    width: 8px; /* Largura da barra de rolagem */
+    height: 8px; /* Altura da barra de rolagem (se for rolagem horizontal) */
+}
+
+/* Personalizando o fundo da barra de rolagem */
+::-webkit-scrollbar-track {
+    background: transparent; /* Fundo transparente para a trilha da barra */
+}
+
+/* Personalizando o "polegar" (parte que o usuário clica e arrasta) */
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2); /* Cor do polegar (pode ajustar a opacidade) */
+    border-radius: 4px; /* Bordas arredondadas */
+}
+
+/* Personalizando o "polegar" quando está sendo clicado (arrastado) */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.4); /* Muda a cor quando o polegar é hover */
+}
+
+
+Body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+	display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o footer fique no final da tela */
+}
+main {
+    flex: 1;
+}
+
+#horizonte {
+    display: flex;
+    flex-direction: row;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
+}
+.image-frame {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%; /* Faz a moldura ser redonda */
+    overflow: hidden; /* Garante que a imagem se encaixe na moldura */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+    height: 200px;
+    background-image: url(imagens/Perigo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    color: white;
+}
+header h1 {
+    font-size: 70px;
+}
+
+.review {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    background-color: rgb(5, 104, 26);
+}
+.review p {
+    font-family: Verdana;
+    font-size: 16px;
+    color:#ddd;
+}
+.review img {
+    margin-right: 1rem; 
+    transition: opacity 0.3s;
+}
+
+.review0 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    background-color: purple;
+}
+.review0 p {
+    font-family: Verdana;
+    font-size: 16px;
+    color:#ddd;
+}
+.review0 img {
+    margin-right: 1rem; 
+    transition: opacity 0.3s;
+}
+
+.review1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    background-color: rgb(20, 137, 209);
+}
+.review1 p {
+    font-family: Verdana;
+    font-size: 16px;
+    color:#ddd;
+}
+.review1 img {
+    margin-right: 1rem; 
+    transition: opacity 0.3s;
+}
+
+.review2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    background-color: gray;
+}
+.review2 p {
+    font-family: Verdana;
+    font-size: 16px;
+    color:#ddd;
+}
+.review2 img {
+    margin-right: 1rem; 
+    transition: opacity 0.3s;
+}
+
+.review3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    background-color: rgb(218, 29, 29);
+}
+.review3 p {
+    font-family: Verdana;
+    font-size: 16px;
+    color:#ddd;
+}
+.review3 img {
+    margin-right: 1rem; 
+    transition: opacity 0.3s;
+}
+
+
+#Resumo {
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+#Resumo p::first-line {
+    font-family:'Trebuchet MS';
+    font-size: 50px;
+    color:darkorange;
+}
+#Resumo p {
+    margin: 30px 0px 10px 50px;
+    font-size: 30px;
+}
+
+#Resumo a {
+	text-decoration: none;
+	color: blueviolet;
+	
+}
+
+nav { 
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+	margin-bottom: 50px;
+}
+nav a {
+    height: 30px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Trebuchet MS';
+    color: darkorange;
+	border-radius: 8px;
+	transition: all 0.3s ease;
+    margin: 10px 30px 10px 0px;
+}
+nav a:hover {
+    color: blueviolet;
+    border-bottom: 4px solid blueviolet;
+    font-size: 40px;
+}
+nav a:active {
+    color: blue;
+    background-color: rgb(214, 211, 211);
+    border-bottom: 4px solid  blue;
+}
+#aquiestou {
+    border-bottom: 4px solid darkorange;
+}
+#aquiestou:hover {
+    border-bottom: 4px solid blueviolet;
+}
+#aquiestou:active {
+    border-bottom: 4px solid blue;
+}
+
+h2 {
+	font-family: Trebuchet;
+	color: orange;
+	font-size: 30px;
+}
+
+footer {
+	margin: 0px;
+	margin-top: 50px;
+	padding: 10px;
+	height: 50px;
+	color: rgb(231, 168, 33);
+}
+
+footer p {
+	font-size: 20px;
+	font-family: upper-roman;
+	text-decoration: bold;
+	text-align: center;
+    
+}
+
+#contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#midia {
+    display: flex;
+    flex-direction: row;
+
+}
+
+#midia a:hover .icone {
+    width: 150px;
+    height: 150px;
+    transition: all 0.3s ease;
+}
+
+#midia p {
+    color: white;
+}
+
+.icone {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: solid 2px rgb(189, 185, 185);
+    
+}
+
+@media (max-width: 768px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a:hover {
+        color: blueviolet;
+        border-bottom: 4px solid blueviolet;
+        font-size: 20px;
+    }
+
+    #horizonte {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .image-frame img {
+        border-radius: 50%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #Resumo {
+        width: 80%;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    /* Navegação */
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 10px 0;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    header h1 {
+        margin: 0px;
+        padding: 18px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #horizonte {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .image-frame img {
+        width: 120px;  /* Reduz o tamanho da imagem no celular */
+        height: 120px;  /* Reduz o tamanho da imagem no celular */
+    }
+
+    #Resumo {
+        width: 80%;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    /* Navegação */
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin: 10px 10px 10px 10px;
+        font-size: 16px;
+    }
+
+    #Resumo {
+        font-size: 14px;  /* Ajuste de fonte em telas muito pequenas */
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    #midia {
+        display: flex;
+        flex-direction: column;
+    
+    }
+}
+
