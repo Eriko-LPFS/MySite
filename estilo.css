@@ -20,6 +20,37 @@
     background: rgba(0, 0, 0, 0.4); /* Muda a cor quando o polegar é hover */
 }
 
+/* Estilo do link */
+.tooltip {
+    position: relative;
+    text-decoration: none;
+    color: #007bff;
+}
+  
+/* Estilo da caixinha (tooltip) */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Aparece acima do link */
+    left: 50%;
+    margin-left: -100px; /* Centraliza a tooltip */
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+  
+  /* Mostra a tooltip quando o mouse passa sobre o link */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+  
 
 .orbitron-orbita {
   font-family: "Orbitron", serif;
@@ -77,6 +108,7 @@ header h1 {
 }
 
 .review {
+    width: 60%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -85,6 +117,7 @@ header h1 {
     margin: 1rem;
     display: flex;
     background-color: rgb(5, 104, 26);
+    border-radius: 18px;
 }
 .review p {
     font-family: Verdana;
@@ -97,6 +130,7 @@ header h1 {
 }
 
 .review0 {
+    width: 60%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -105,6 +139,7 @@ header h1 {
     margin: 1rem;
     display: flex;
     background-color: purple;
+    border-radius: 18px;
 }
 .review0 p {
     font-family: Verdana;
@@ -117,6 +152,7 @@ header h1 {
 }
 
 .review1 {
+    width: 60%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -125,6 +161,7 @@ header h1 {
     margin: 1rem;
     display: flex;
     background-color: rgb(20, 137, 209);
+    border-radius: 18px;
 }
 .review1 p {
     font-family: Verdana;
@@ -137,6 +174,7 @@ header h1 {
 }
 
 .review2 {
+    width: 60%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -145,6 +183,7 @@ header h1 {
     margin: 1rem;
     display: flex;
     background-color: gray;
+    border-radius: 18px;
 }
 .review2 p {
     font-family: Verdana;
@@ -157,6 +196,7 @@ header h1 {
 }
 
 .review3 {
+    width: 60%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -165,6 +205,7 @@ header h1 {
     margin: 1rem;
     display: flex;
     background-color: rgb(218, 29, 29);
+    border-radius: 18px;
 }
 .review3 p {
     font-family: Verdana;
@@ -289,7 +330,7 @@ footer p {
 
 }
 
-#midia a:hover .icone {
+.icone:hover {
     width: 150px;
     height: 150px;
     transition: all 0.3s ease;
