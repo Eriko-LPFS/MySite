@@ -361,14 +361,6 @@ footer p {
         font-size: 20px;
     }
 
-    #horizonte {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        width: 100%;
-    }
-
     .container {
         width: 100%;
         display: flex;
@@ -413,7 +405,7 @@ footer p {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        width: 100%;
+        width: 90%;
     }
 
     .container {
@@ -423,8 +415,8 @@ footer p {
     }
 
     .image-frame img {
-        width: 120px;  /* Reduz o tamanho da imagem no celular */
-        height: 120px;  /* Reduz o tamanho da imagem no celular */
+        width: 300px;  /* Reduz o tamanho da imagem no celular */
+        height: 300px;  /* Reduz o tamanho da imagem no celular */
     }
 
     #Resumo {
