@@ -435,8 +435,12 @@ footer p {
         font-size: 16px;
     }
 
-    #Resumo {
+    #Resumo p {
         font-size: 14px;  /* Ajuste de fonte em telas muito pequenas */
+    }
+	
+    #Resumo p::first-line {
+        font-size: 24px;
     }
 
     nav a {
