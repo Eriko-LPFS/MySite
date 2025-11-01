@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Eriko L. Prates — Automação BIM & Engenharia</title>
+  <meta name="description" content="Eriko Prates — Engenharia, automação BIM (Revit API), programação em C#. Portfólio e projetos." />
+  <meta name="author" content="Eriko Luiz Prates" />
+
+  <!-- Simple styling: copy / edit freely -->
+  <style>
+    :root{--bg:#0f1720;--card:#0b1220;--muted:#9aa4b2;--accent:#7dd3fc}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter, system-ui, -apple-system, Roboto, 'Segoe UI', Arial;background:linear-gradient(180deg,#071028 0%,var(--bg) 100%);color:#e6eef6;line-height:1.4}
+    .wrap{max-width:980px;margin:40px auto;padding:28px}
+    header{display:flex;align-items:center;gap:18px}
+    .avatar{width:86px;height:86px;border-radius:14px;background:linear-gradient(135deg,#1f2937,#0b1220);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent);font-size:26px}
+    h1{margin:0;font-size:22px}
+    p.lead{margin:6px 0 0;color:var(--muted)}
+
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:22px;margin-top:26px}
+    .card{background:var(--card);border-radius:12px;padding:16px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+
+    .projects{display:grid;gap:12px}
+    .project{display:flex;gap:12px;align-items:flex-start}
+    .thumb{width:84px;height:64px;border-radius:8px;background:#061226;display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:12px}
+    .proj-title{font-weight:600;margin:0}
+    .proj-desc{margin:4px 0 0;color:var(--muted);font-size:13px}
+    .meta{margin-top:12px;font-size:13px;color:var(--muted)}
+
+    aside .section-title{font-weight:600;margin-bottom:8px}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:#051427;padding:8px 10px;border-radius:999px;font-size:13px;color:var(--muted)}
+    .links{display:flex;flex-direction:column;gap:8px;margin-top:12px}
+    a.btn{display:inline-block;padding:10px 12px;border-radius:10px;text-decoration:none;color:#061826;background:var(--accent);font-weight:600}
+
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:13px}
+
+    @media (max-width:900px){.grid{grid-template-columns:1fr;}.avatar{width:72px;height:72px}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="avatar">EL</div>
+      <div>
+        <h1>Eriko Luiz Prates</h1>
+        <p class="lead">Engenheiro em formação • Automação BIM (Revit API) • C# • Ferramentas que economizam tempo de projeto</p>
+      </div>
+    </header>
+
+    <main class="grid">
+      <!-- Left column: projetos e sobre -->
+      <section>
+        <div class="card">
+          <h2 style="margin-top:0">Sobre</h2>
+          <p style="color:var(--muted)">Sou estudante de Engenharia (IFSC) com foco em automação BIM e programação para Revit. Gosto de resolver problemas que "doem" no dia a dia do projeto: tarefas repetitivas, checagens, e otimização de fluxo de trabalho. Meus projetos demonstram resultados — redução de tempo e riscos.</p>
+          <div class="meta">Disponível para freelas, consultoria e parcerias remotas.</div>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <h2 style="margin-top:0">Projetos selecionados</h2>
+          <div class="projects">
+            <!-- Example items: keep descriptions outcome-focused. Replace thumbs with GIFs or short videos (hosted on GitHub or Imgur) -->
+            <article class="project">
+              <div class="thumb">GIF</div>
+              <div>
+                <p class="proj-title">Automação de conexões elétricas</p>
+                <p class="proj-desc">Ferramenta interna que reduz o tempo de conexão de luminárias e tomadas em projetos grandes. Resultado: economia média de 85% no tempo de execução.</p>
+              </div>
+            </article>
+
+            <article class="project">
+              <div class="thumb">IMG</div>
+              <div>
+                <p class="proj-title">Validação de projeto</p>
+                <p class="proj-desc">Scripts que encontram inconsistências comuns em instalações elétricas e geram checklist exportável para QA do projeto.</p>
+              </div>
+            </article>
+
+            <article class="project">
+              <div class="thumb">VID</div>
+              <div>
+                <p class="proj-title">Conectividade Revit ↔ Excel</p>
+                <p class="proj-desc">Ferramenta de exportação/importação de dados entre Revit e planilhas para controles de medição e orçamento.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="meta">Observação: por segurança, o código dos meus projetos principais é privado — mostro apenas demos e resultados.</div>
+        </div>
+
+        <div class="card" style="margin-top:14px">
+          <h2 style="margin-top:0">Publicações e materiais</h2>
+          <p style="color:var(--muted)">Tutoriais e exemplos públicos:</p>
+          <ul style="color:var(--muted)">
+            <li>Introdução à Revit API com C#</li>
+            <li>Desvendando o RevitAPI Docs</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Right column: skills, contact -->
+      <aside>
+        <div class="card">
+          <div class="section-title">Skills</div>
+          <div class="skills">
+            <span class="skill">Revit API</span>
+            <span class="skill">C#</span>
+            <span class="skill">BIM</span>
+            <span class="skill">Automação</span>
+          </div>
+
+          <div class="section-title" style="margin-top:14px">Links rápidos</div>
+          <div class="links">
+            <a class="btn" href="https://github.com/Eriko-LPFS" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn" href="https://www.instagram.com/eriko.lp/" target="_blank" rel="noopener">Instagram</a>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <div class="section-title">Resumo rápido</div>
+          <p style="color:var(--muted);margin:0">Engenharia • Automação BIM • Ferramentas que trazem impacto mensurável em produtividade de projeto. Trabalho remoto, freelas e consultoria.</p>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <div>Feito por Eriko • <a href="https://github.com/seu-usuario" target="_blank" rel="noopener" style="color:var(--accent);text-decoration:none">GitHub</a></div>
+      <div style="margin-top:6px;color:var(--muted)">2025</div>
+    </footer>
+  </div>
+</body>
+</html>
